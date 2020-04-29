@@ -1,4 +1,3 @@
-
 {% extends 'base.html' %}
 
 {% block content %}
@@ -9,19 +8,19 @@
 
     <div class="row">
         {% for posting in final_postings %}
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image">
-                        <a href="{{ posting.1 }}"><img src="{{ posting.3 }}" alt=""></a>
-                    </div>
-                    <div class="card-content">
-                        <p>{{ posting.0 }}</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ posting.1 }}">View listing: Price {{ posting.2 }}</a>
-                    </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <a href="{{ posting.1 }}"><img src="{{ posting.3 }}" alt=""></a>
+                </div>
+                <div class="card-content">
+                    <p>{{ posting.0 }}</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ posting.1 }}">View listing: Price {{ posting.2 }}</a>
                 </div>
             </div>
+        </div>
         {% endfor %}
     </div>
 
