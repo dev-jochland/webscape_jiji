@@ -1,0 +1,1 @@
+This project renders search result scrapped from 'https://jiji.ng' dynamically on my page.
